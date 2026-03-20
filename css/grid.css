@@ -26,6 +26,19 @@ body, p, h1, h2, h3, h4, h5 {
    display: none;
 }
 
+/* Use for hiding titles */
+.visually-hidden {
+   position: absolute !important;
+   width: 1px !important;
+   height: 1px !important;
+   padding: 0 !important;
+   margin: -1px !important;
+   overflow: hidden !important;
+   clip: rect(0,0,0,0) !important;
+   white-space: nowrap !important;
+   border: 0 !important;
+}
+
 .box {
    background-color: powderblue;
    color: rgb(27, 27, 27);
@@ -39,6 +52,12 @@ body, p, h1, h2, h3, h4, h5 {
 .center-grid-con {
    margin: 0 auto;
 }
+
+.full-width-grid-con {
+   display: grid;
+   grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+
 
 /* ---Mobile Library Grid Styles--- */
 
