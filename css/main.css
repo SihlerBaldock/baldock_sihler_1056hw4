@@ -1,0 +1,31 @@
+#zima-bckgrd {
+    justify-self: center;
+    grid-row: 1;
+}
+
+#nested-hero-grid {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+#nested-hero-grid h2 {
+    color: white;
+    text-align: center;
+    font-family: Jura;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#nested-hero-grid h2 span {
+    font-size: 24px;
+}
+
+#nested-hero-grid a {
+    font-family: Sora;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    height: 40px;
+    max-width: 180px;
+}
