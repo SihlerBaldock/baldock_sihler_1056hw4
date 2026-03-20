@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nested Grids & Flexbox</title>
-    <link href="css/grid.css" ref="stylesheet">
-    <link href="css/main.css" ref="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1 class="visually-hidden">Zima Hero Section</h1>
+        <header class="full-width-grid-con">
+            <img
+            sizes="100vw"
+            srcset="
+            images/zima-background_kkrqx0_c_scale,w_200.png 200w,
+            images/zima-background_kkrqx0_c_scale,w_691.png 691w,
+            images/zima-background_kkrqx0_c_scale,w_1027.png 1027w,
+            images/zima-background_kkrqx0_c_scale,w_1257.png 1257w,
+            images/zima-background_kkrqx0_c_scale,w_1468.png 1468w,
+            images/zima-background_kkrqx0_c_scale,w_1654.png 1654w,
+            images/zima-background_kkrqx0_c_scale,w_1819.png 1819w"
+            src="images/zima-background_kkrqx0_c_scale,w_1920.png"
+            alt="Zima Skinny Cans Background Image" id="zima-bckgrd" class="col-span-full">
+            <section id="nested-hero-grid" class="grid-con">
+                <h2 class="col-span-full m-col-start-3 m-col-end-11"><span>ZIMA</span><br>The Refreshing Citrus Beverage</h2>
+                <a class="col-start-2 col-end-4 m-col-start-2 m-col-end-5" href="#">Learn More</a> 
 
+            </section>
+    
+        </header>
     <script src="js/main.js"></script>
 </body>
 </html>
