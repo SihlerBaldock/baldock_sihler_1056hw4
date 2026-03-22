@@ -9,11 +9,16 @@
 }
 
 #nested-hero-grid h2 {
-    color: white;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.75);
     text-align: center;
     font-family: Jura;
     margin-top: 10px;
     font-size: 18px;
+    border: 3px solid;
+    height: 60px; 
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    margin-top: 30px;
 }
 
 #nested-hero-grid h2 span {
@@ -21,11 +26,65 @@
 }
 
 #nested-hero-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Sora;
-    text-align: center;
+    font-size: 16px;
     text-decoration: none;
-    color: white;
-    background-color: orange;
-    height: 40px;
-    max-width: 180px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 50px;
+    padding: 12px;
+    border: 3px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
 }
+
+#nested-hero-grid a:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+}
+
+#button {
+  font-family: Sora;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 12px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  height: 50px;
+}
+
+#button:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    #nested-hero-grid a {
+        order: -1;
+        margin-top: 30px;
+    }
+
+    #button {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #button {
+        order: -1;
+    }
+
+    #nested-hero-grid a {
+        order: 1;
+    }
+}
+
+
